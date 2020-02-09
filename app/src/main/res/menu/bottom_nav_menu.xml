@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard" />
+    <item
+        android:id="@+id/navigation_keranjang"
+        android:icon="@drawable/ic_add_menu"
+        android:title="@string/title_keranjang" />
+    <item
+        android:id="@+id/navigation_pesanan"
+        android:icon="@drawable/pesanan"
+        android:title="@string/title_pesanan" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/title_profile" />
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/food"
+        android:title="@string/title_logout" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_Makanan"-->
+<!--        android:icon="@drawable/food"-->
+<!--        android:title="@string/title_pesanan" />-->
+<!--    <item-->
+<!--        android:id="@+id/navigation_Minuman"-->
+<!--        android:icon="@drawable/minuman"-->
+<!--        android:title="Minuman" />-->
+<!--    <item-->
+<!--        android:id="@+id/navigation_Custome"-->
+<!--        android:icon="@drawable/custom"-->
+<!--        android:title="Custom" />-->
+
+</menu>

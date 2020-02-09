@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.ECatering.e_catering.Menu.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:name="com.ECatering.e_catering.Menu.ui.home.HomeFragment"-->
+<!--        android:label="@string/title_home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+
+    <fragment
+        android:id="@+id/navigation_keranjang"
+        android:name="com.ECatering.e_catering.Menu.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ECatering.e_catering.Menu.ui.profile.FragmentProfile"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/navigation_pesanan"
+        android:name="com.ECatering.e_catering.Menu.ui.pesanan.FragmentPesanan"
+        android:label="@string/title_pesanan"
+        tools:layout="@layout/fragment_pesanan"/>
+
+    <fragment
+        android:id="@+id/navigation_logout"
+        android:name="com.ECatering.e_catering.Menu.ui.logout.fragmentlogout"
+        android:label="@string/title_logout"
+        tools:layout="@layout/fragmentlogout"/>
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_Makanan"-->
+<!--        android:name="com.ECatering.e_catering.Menu.ui.home.HomeFragment"-->
+<!--        android:label="makanan"-->
+<!--        tools:layout="@layout/fragment_home"/>-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_Minuman"-->
+<!--        android:name="com.ECatering.e_catering.Menu.ui.minuman.Fragment_minuman"-->
+<!--        android:label="minuman"-->
+<!--        tools:layout="@layout/fragmentminuman"/>-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_Custome"-->
+<!--        android:name="com.ECatering.e_catering.Menu.ui.custom.Fragment_Custom"-->
+<!--        android:label="Custom"-->
+<!--        tools:layout="@layout/fragmentcustom"/>-->
+</navigation>

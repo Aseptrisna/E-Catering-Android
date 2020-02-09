@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">E-Catering</string>
+    <string name="slogan">  E-CATERING</string>
+    <string name="list_a">Nasi Rames</string>
+    <string name="list_b">Minggu, 14 April 2014</string>
+    <string name="list_c">Hotel grand kemang, Jakarta</string>
+    <string name="list_d">500,000</string>
+    <string name="list_e">200000</string>
+    <string name="list_f">Drg. Handoko Brimajaya</string>
+    <string name="list">SilahKan Pilih Katergori Menu</string>
+    <string name="cost">IDR</string>
+    <string name="user">PARTICIPANT</string>
+
+    <string name="url">http://192.168.1.7/E-Catering/</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">profile</string>
+    <string name="title_pesanan">pesanan</string>
+    <string name="title_keranjang">keranjang</string>
+    <string name="title_logout">Tentang Aplikasi</string>
+
+    <string-array name="daftar_makanan">
+        <item>Bakso</item>
+        <item>Ayam Goreng</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:background="@color/Birumuda"
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--    <include-->
+<!--        android:id="@+id/inc"-->
+<!--        layout="@layout/common_toolbar" />-->
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutMain"
+        android:gravity="center_vertical"
+        tools:ignore="NotSibling,UnknownId">
+    <androidx.core.widget.NestedScrollView
+        android:padding="5dp"
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/fadeWhite">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Daftar Belanja Anda"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tampilkeranjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="3dp"
+            app:cardMaxElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp"
+            android:layout_marginBottom="10dp"
+            tools:ignore="MissingConstraints">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listkeranjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="3dp"
+            app:cardMaxElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp"
+            android:layout_marginBottom="40dp"
+            tools:ignore="MissingConstraints">
+<!--            <Button-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:id="@+id/Prosesbayar"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/colorPrimaryDark"-->
+<!--                android:text="Bayar" />-->
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

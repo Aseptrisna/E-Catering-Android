@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.Detail_Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:id="@+id/Gambarmenudetail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:src="@drawable/itemsatu"-->
+<!--            android:scaleType="fitXY"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Nama Menu"
+            android:id="@+id/Nama_Menu"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Rp 25000"
+            android:id="@+id/Harga_Menu"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nasi, ayam bakar/goring, orek tempe, kering kentang, tempe bacem, capcai, sambal, timun, kerupuk, aqua, buah"
+            android:id="@+id/Deskripsi_Menu"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <Button
+            android:id="@+id/RegisternBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Masukan Daftar Belanja"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/c_white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

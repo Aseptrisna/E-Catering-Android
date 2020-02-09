@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:background="@drawable/background03">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textStyle="italic"
+            android:text="E-CATERING"
+            android:textColor="@color/mainTextDark"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+
+        <ViewFlipper
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageslider"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true">
+        </ViewFlipper>
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="MENU"
+                android:textStyle="italic"
+                android:textColor="@color/mainTextDark"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:background="@color/putih"
+            android:layout_width="100dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="100dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5.0dp"
+                    android:id="@+id/nasikotak"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nasikotak"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:text="Nasi Kotak"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:background="@color/putih"
+            android:layout_width="100dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="100dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5.0dp"
+                    android:id="@+id/tumpeng"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tumpeng"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:text="Tumpeng"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:background="@color/putih"
+            android:layout_width="100dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="4dp"
+            android:layout_height="100dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5.0dp"
+                    android:id="@+id/semuamenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/semuamenu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:text="Semua Menu"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />-->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/putih"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="100dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="5.0dp"
+                        android:id="@+id/c.nasikotak"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nasikotak"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="Custommize"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/putih"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="100dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="5.0dp"
+                        android:id="@+id/c.tumpeng"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/tumpeng"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="Custommize"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/putih"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="5.0dp"
+                        android:id="@+id/c.minuman"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/minuman"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="Minuman"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />-->
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lineartampildata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/kembalikedashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Kemabali Ke Dashboard?"
+                android:textStyle="italic"
+                android:textColor="@color/mainTextDark"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_menuutama"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

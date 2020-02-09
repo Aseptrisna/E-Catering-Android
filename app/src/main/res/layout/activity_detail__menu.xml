@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.Detail_Menu">
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/Gambarmenudetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/itemsatu"
+                    android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Nama Menu"
+            android:id="@+id/Nama_Menu"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Rp 25000"
+            android:id="@+id/Harga_Menu"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nasi, ayam bakar/goring, orek tempe, kering kentang, tempe bacem, capcai, sambal, timun, kerupuk, aqua, buah"
+            android:id="@+id/Deskripsi_Menu"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Jumlah_belanja"
+            android:inputType="number"
+            android:hint="Masukan Jumlah"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/tambahkeranjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Masukan Daftar Belanja"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/c_white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/app_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/app_bar_height"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:theme="@style/AppTheme.NoActionBar">-->
+
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:id="@+id/toolbar_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fitsSystemWindows="true"-->
+<!--            app:contentScrim="?attr/colorAccent"-->
+<!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+<!--            app:toolbarId="@+id/toolbar">-->
+<!--            &lt;!&ndash;TAMPILKAN GAMBAR&ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:id="@+id/Gambarmenudetail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/itemsatu"-->
+<!--                android:scaleType="fitXY"/>-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                app:layout_collapseMode="pin"-->
+<!--                app:popupTheme="@style/AppTheme.NoActionBar" />-->
+
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:padding="10dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginTop="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginRight="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/Gambarmenudetail"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="250dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:src="@drawable/itemsatu"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:scaleType="fitXY"/>&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:text="Nama Menu"-->
+<!--            android:id="@+id/Nama_Menu"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="normal"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:text="Rp 25000"-->
+<!--            android:id="@+id/Harga_Menu"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="normal"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+<!--        <WebView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="nasi, ayam bakar/goring, orek tempe, kering kentang, tempe bacem, capcai, sambal, timun, kerupuk, aqua, buah"-->
+<!--            android:id="@+id/Deskripsi_Menu"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="normal"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/RegisternBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/btn"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="20dp"-->
+<!--            android:text="Masukan Daftar Belanja"-->
+<!--            android:textAppearance="?android:textAppearanceLarge"-->
+<!--            android:textColor="@color/c_white"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <include layout="@layout/contentdetail_menu" />-->
+
+</ScrollView>
