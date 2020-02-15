@@ -147,28 +147,28 @@ public class Pembayaran extends AppCompatActivity {
                 loading.dismiss();
                 Toast.makeText(Pembayaran.this, "Daftar Pesanan Ditambah", Toast.LENGTH_LONG).show();
 
-                String pesan= d_namauser.toString();
-                int   pesan3 =d_harga;
-//                ResponseBody pesan2 = df;
-                String Mandiri="18360071676154";
-                String Bri    ="7464564652242";
-                Intent kirimWA = new Intent(Intent.ACTION_SEND);
-                Intent intent = kirimWA.setType("text/plain");
-                String semuapesan="Nama: " + pesan
-                        + "\n" +
-                        "ID : " + response.body()+
-                        "\n" +
-                        "Total :Rp. " +
-                        pesan3+ "\n" +
-                        "Rek.Mandiri:"+ Mandiri
-                        +  "\n" + "Rek.Bri: " + Bri
-                        + "\n" + "Atas Nama:Rahmawati Mba";
-
-                kirimWA.putExtra(Intent.EXTRA_TEXT, semuapesan);
-                kirimWA.putExtra("jid", "62895616712143"+"@s.whatsapp.net");
-                kirimWA.setPackage("com.whatsapp");
-                startActivity(kirimWA);
-                finish();
+//                String pesan= d_namauser.toString();
+//                int   pesan3 =d_harga;
+////                ResponseBody pesan2 = df;
+//                String Mandiri="18360071676154";
+//                String Bri    ="7464564652242";
+//                Intent kirimWA = new Intent(Intent.ACTION_SEND);
+//                Intent intent = kirimWA.setType("text/plain");
+//                String semuapesan="Nama: " + pesan
+//                        + "\n" +
+//                        "ID : " + response.body()+
+//                        "\n" +
+//                        "Total :Rp. " +
+//                        pesan3+ "\n" +
+//                        "Rek.Mandiri:"+ Mandiri
+//                        +  "\n" + "Rek.Bri: " + Bri
+//                        + "\n" + "Atas Nama:Rahmawati Mba";
+//
+//                kirimWA.putExtra(Intent.EXTRA_TEXT, semuapesan);
+//                kirimWA.putExtra("jid", "62895616712143"+"@s.whatsapp.net");
+//                kirimWA.setPackage("com.whatsapp");
+//                startActivity(kirimWA);
+//                finish();
                 // Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
 
 
@@ -184,10 +184,10 @@ public class Pembayaran extends AppCompatActivity {
         });
 
 
-//        Intent sign = new Intent(this, Dashboard.class);
-//        startActivity(sign);
-////        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-//        finish();
+        Intent sign = new Intent(this, Dashboard.class);
+        startActivity(sign);
+//        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        finish();
     }
 
     private void delete() {

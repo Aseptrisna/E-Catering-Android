@@ -161,8 +161,9 @@ public class Nasi_Kotak extends AppCompatActivity {
 
     private void tampilhasil() {
         String d_kategori = String.valueOf(IsianSpinner);
+        String d_jml = String.valueOf(jumlah);
 //        Toast.makeText(this, ""+IsianSpinner, Toast.LENGTH_SHORT).show();
-        retrofit2.Call<Response_Menu> call = InitRetrofit.getInstance().getApi().CustomizeKotak(d_kategori);
+        retrofit2.Call<Response_Menu> call = InitRetrofit.getInstance().getApi().CustomizeKotak(d_kategori,d_jml);
         call.enqueue(new Callback<Response_Menu>() {
             @Override
             public void onResponse(Call<Response_Menu> call, Response<Response_Menu> response) {

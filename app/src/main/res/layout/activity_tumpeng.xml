@@ -143,6 +143,41 @@
                         </com.google.android.material.textfield.TextInputLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_below="@+id/mJumlahorang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="3dp"
+                        app:cardMaxElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp"
+                        tools:ignore="MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Pilih Jenis Tumpeng"
+                            android:textColorHint="@color/black">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="5dp"
+                                android:text="Pilih Warna Tumpeng"
+                                android:textStyle="italic"
+                                android:textColor="@color/black" />
+
+                            <Spinner
+                                android:id="@+id/SpinnerWarna"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="12dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
                     <Button
                         android:layout_alignParentBottom="true"
                         android:id="@+id/Proses"

@@ -52,7 +52,7 @@ public class Adapter_Custome extends RecyclerView.Adapter<Adapter_Custome.MyView
 //        JL = menu.get(position).getJumlah_menu();
 //        int jml=Jumlah;
 //        holder.harga.setText(idrsatuan*jumlah);
-        final String urlGambar = InitRetrofit.BASE_URL+"/Images/" + menu.get(position).getFoto();
+        final String urlGambar = InitRetrofit.BASE_URL+"../Images/" + menu.get(position).getFoto();
         Picasso.with(context).load(urlGambar).into(holder.gambarmenu);
         holder.addbelanja.setOnClickListener(new View.OnClickListener() {
             @Override

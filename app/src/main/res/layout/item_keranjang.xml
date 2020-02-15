@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:background="@drawable/background03"
+    android:background="@color/accent_500"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -26,19 +26,18 @@
 <!--                android:layout_centerVertical="true"-->
 <!--                android:layout_margin="2dp" />-->
 
-            <View
-                android:id="@+id/cartVerticalLine"
-                android:layout_width="2dip"
-                android:layout_height="fill_parent"
-                android:layout_toRightOf="@+id/checkOutChkBox"
-                android:background="@color/colorPrimaryDark" />
+<!--            <View-->
+<!--                android:id="@+id/cartVerticalLine"-->
+<!--                android:layout_width="2dip"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:layout_toRightOf="@+id/checkOutChkBox"-->
+<!--                android:background="@color/colorPrimaryDark" />-->
 
             <ImageView
                 android:id="@+id/checkoutShopIcon"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@+id/cartVerticalLine"
                 android:contentDescription="Shop Icon"
                 android:scaleType="centerCrop"
                 android:src="@mipmap/shop_icon" />
@@ -58,7 +57,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/checkoutShopName"
-                android:layout_toRightOf="@+id/cartVerticalLine"
                 android:background="@color/colorPrimaryDark" />
 
             <ImageView
@@ -68,7 +66,6 @@
                 android:layout_below="@+id/line_below_cartShopName"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_toRightOf="@+id/cartVerticalLine"
                 android:contentDescription="Product Image"
                 android:scaleType="centerCrop"
                 card_view:srcCompat="@drawable/itemsatu" />

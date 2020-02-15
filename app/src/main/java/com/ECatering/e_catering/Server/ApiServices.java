@@ -1,5 +1,6 @@
 package com.ECatering.e_catering.Server;
 
+import com.ECatering.e_catering.Response.Img_Pojo;
 import com.ECatering.e_catering.Response.Response_Menu;
 import com.ECatering.e_catering.Response.Response_Pesanan;
 import com.ECatering.e_catering.Response.Response_Register;
@@ -86,7 +87,8 @@ public interface ApiServices {
     @FormUrlEncoded
     @POST("C.NasiKotak.php")
     Call<Response_Menu> CustomizeKotak(
-            @Field("kategori") String d_kategori
+            @Field("kategori") String d_kategori,
+            @Field("jumlah") String d_jml
     );
 
 
@@ -111,5 +113,20 @@ public interface ApiServices {
     Call<Response_Pesanan> tampilpesanan(
             @Field("username") String Username
     );
+
+
+
+    @FormUrlEncoded
+    @POST("Update_User.php")
+    Call<ResponseBody> userapdet(
+            @Field("nama") String nama,
+            @Field("alamat") String alamat,
+            @Field("telpom") String telpon,
+            @Field("email") String email
+    );
+
+    @FormUrlEncoded
+    @POST("BuktiByar.php")
+    Call<Img_Pojo> uploadImage(@Field("id_pesanan") String title, @Field("foto") String image);
 
 }

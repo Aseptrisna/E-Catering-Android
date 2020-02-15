@@ -27,7 +27,8 @@
                 android:layout_below="@id/textView3"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Aplikasi Pemesanan Catering Secara Online Untuk Ara Bandar Lampung"
+                android:text="Aplikasi Pemesanan Catering Secara Online Untuk Area Bandar Lampung.
+Kontak person:0895616712143 "
                 android:layout_alignParentLeft="true" />
 
             <TextView

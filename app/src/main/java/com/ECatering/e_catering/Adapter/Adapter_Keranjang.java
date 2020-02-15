@@ -59,7 +59,7 @@ public class Adapter_Keranjang extends RecyclerView.Adapter<Adapter_Keranjang.My
         holder.nama_makanan.setText(keranjang.get(position).getNama_menu());
         holder.harga.setText("Rp." + keranjang.get(position).getPerkiraan_harga());
         holder.Jumlah_pesanan.setText(keranjang.get(position).getJumlah_menu());
-        final String urlGambarmakanan = InitRetrofit.BASE_URL + "/Images/" + keranjang.get(position).getFoto_makanan();
+        final String urlGambarmakanan = InitRetrofit.BASE_URL + "../Images/" + keranjang.get(position).getFoto_makanan();
         Picasso.with(context).load(urlGambarmakanan).into(holder.gambar);
         ID = keranjang.get(position).getId();
         NM = keranjang.get(position).getNama_menu();
@@ -109,7 +109,7 @@ public class Adapter_Keranjang extends RecyclerView.Adapter<Adapter_Keranjang.My
             nama_makanan = (TextView) itemView.findViewById(R.id.checkoutShopName);
             harga = (TextView) itemView.findViewById(R.id.checkoutTxtTitle);
             delete = (ImageButton) itemView.findViewById(R.id.delChkoutItemBut);
-            pilihbelanjaan = (CheckBox) itemView.findViewById(R.id.checkOutChkBox);
+//            pilihbelanjaan = (CheckBox) itemView.findViewById(R.id.checkOutChkBox);
 //            bayar = (Button) itemView.findViewById(R.id.Prosesbayar);
 
 //            pilihbelanjaan.isChecked();

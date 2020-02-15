@@ -3,6 +3,12 @@
     package="com.ECatering.e_catering">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM"/>
+    <uses-permission android:name="READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +19,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Menu.Pembayaran"></activity>
+        <activity android:name=".Menu.Edit_profile"></activity>
+        <activity android:name=".Menu.Pembayaran" />
         <activity android:name=".Custommize.Nasi_Kotak" />
         <activity android:name=".Custommize.Tumpeng" />
         <activity android:name=".Menu.Detail_Menu" />

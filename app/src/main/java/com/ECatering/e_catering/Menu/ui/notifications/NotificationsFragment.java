@@ -93,7 +93,7 @@ public class NotificationsFragment extends Fragment {
                         Adapter_Keranjang adapter = new Adapter_Keranjang(getActivity(), data_menu);
                         recyclerView.setAdapter(adapter);
                     } else {
-//                        Bayar.setVisibility(View.GONE);
+//
                         Toast.makeText(getActivity(), "Tidak Ada data Daftar Belanja Saat ini", Toast.LENGTH_SHORT).show();
                     }
                 }

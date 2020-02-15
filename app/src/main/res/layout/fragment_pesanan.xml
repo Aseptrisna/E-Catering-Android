@@ -20,6 +20,26 @@
             android:textColor="@color/mainTextDark"
             android:textSize="15sp"
             android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/kembalikedashboard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="No.Rekening    :BCA.02940676650"
+            android:textStyle="italic"
+            android:textColor="@color/mainTextDark"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/kembalikedashboard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="No.Rekening  :BRI.02940676650"
+            android:textStyle="italic"
+            android:textColor="@color/mainTextDark"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_pesanan"

@@ -2,80 +2,86 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
+    android:layout_height="300dp"
     android:background="@drawable/background03"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/pembayaran"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="15dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="ID Transaksi"
+                android:textColor="@color/black"
                 android:textSize="15dp"
-                android:textStyle="italic"
-                android:textColor="@color/black"/>
+                android:textStyle="italic" />
+
             <TextView
+                android:id="@+id/IdTransakai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/IdTransakai"
                 android:text="645402724262" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="Nama Menu   "
+                android:textColor="@color/black"
                 android:textSize="15dp"
-                android:textStyle="italic"
-                android:textColor="@color/black"/>
+                android:textStyle="italic" />
+
             <TextView
+                android:id="@+id/namabarang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/namabarang"
                 android:text="Nama Menu" />
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="Total Pembayaran"
+                android:textColor="@color/black"
                 android:textSize="15dp"
-                android:textStyle="italic"
-                android:textColor="@color/black"/>
+                android:textStyle="italic" />
 
             <EditText
                 android:id="@+id/TotalBayar"
@@ -84,68 +90,96 @@
                 android:inputType="number"
                 android:text="4" />
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="Status Pemesanan"
+                android:textColor="@color/black"
                 android:textSize="15dp"
-                android:textStyle="italic"
-                android:textColor="@color/black"/>
+                android:textStyle="italic" />
+
             <TextView
+                android:id="@+id/Status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Status"
-                android:text="Belum DiTerima"
+                android:layout_marginBottom="8dp"
                 android:inputType="number"
-                android:layout_marginBottom="8dp" />
+                android:text="Belum DiTerima" />
         </LinearLayout>
+
 <!--        <LinearLayout-->
-<!--            android:layout_marginRight="25dp"-->
-<!--            android:layout_marginLeft="25dp"-->
-<!--            android:layout_marginTop="20dp"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="25dp"-->
 <!--            android:gravity="center"-->
 <!--            android:orientation="horizontal">-->
+
 <!--            <Button-->
-<!--                android:background="@drawable/bg_ui"-->
-<!--                android:shadowRadius="@integer/default_circle_indicator_orientation"-->
+<!--                android:id="@+id/pilihfoto"-->
 <!--                android:layout_width="match_parent"-->
 <!--                android:layout_height="wrap_content"-->
-<!--                android:id="@+id/tombol2"-->
-<!--                android:text="Kirim Bukti Pembayaran"-->
-<!--                android:textColor="#ffffff"-->
+<!--                android:background="@drawable/bg_ui"-->
 <!--                android:gravity="center"-->
-<!--                android:textStyle="bold"/>-->
-<!--        </LinearLayout>-->
-<!--        <LinearLayout-->
-<!--            android:layout_marginRight="25dp"-->
-<!--            android:layout_marginLeft="25dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:gravity="center"-->
-<!--            android:orientation="horizontal">-->
-<!--         <TextView-->
-<!--             android:layout_width="wrap_content"-->
-<!--             android:layout_height="match_parent"-->
-<!--             android:textColor="@color/black"-->
-<!--             android:text="Silahkan Tanfer dan Kirim Bukti Pembayaran Apbila status pesanan anda telah di terima."-->
-<!--             android:textSize="15.0dp"-->
-<!--             android:textStyle="italic"-->
-<!--             />-->
+<!--                android:shadowRadius="@integer/default_circle_indicator_orientation"-->
+<!--                android:text="Upload Bukti Pembayaran"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textStyle="bold" />-->
 <!--        </LinearLayout>-->
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/foto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:shadowRadius="@integer/default_circle_indicator_orientation"-->
+<!--                android:text="Upload Bukti Pembayaran"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tombol2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ui"
+                android:gravity="center"
+                android:shadowRadius="@integer/default_circle_indicator_orientation"
+                android:text="Kirim Bukti Pembayaran"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </LinearLayout>
 

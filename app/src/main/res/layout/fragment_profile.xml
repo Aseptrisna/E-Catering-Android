@@ -302,12 +302,15 @@
                 android:textColor="#a2a1b8"
                 android:textSize="16dp" />
 
-            <Switch
+            <Button
                 android:id="@+id/btnupdate"
+                android:background="@drawable/bg_ui"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="left"
+                android:text="Update"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:padding="16dp" />
         </LinearLayout>
     </LinearLayout>

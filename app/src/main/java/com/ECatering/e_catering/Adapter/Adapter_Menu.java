@@ -41,7 +41,7 @@ public class Adapter_Menu extends RecyclerView.Adapter<Adapter_Menu.MyViewHolder
         // Set widget
         holder.nama.setText(menu.get(position).getNama());
         holder.harga.setText("Rp"+menu.get(position).getHarga());
-        final String urlGambar = InitRetrofit.BASE_URL+"/Images/" + menu.get(position).getFoto();
+        final String urlGambar = InitRetrofit.BASE_URL+"../Images/" + menu.get(position).getFoto();
         Picasso.with(context).load(urlGambar).into(holder.gambarmenu);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
